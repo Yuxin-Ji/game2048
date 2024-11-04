@@ -35,10 +35,6 @@ class Game2048:
     def display_grid(self):
         '''Display the current grid state in the terminal'''
         try:
-            # print("\nCurrent Grid:")
-            # for row in self.grid:
-            #     print("\t".join(str(num) if num != 0 else '.' for num in row))
-            # print()
             os.system('cls' if os.name == 'nt' else 'clear')  # Clear console for a dynamic experience
             print("\n" + "=" * 25)
             print(" " * 7 + "2048 Game")

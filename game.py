@@ -73,7 +73,7 @@ class Game2048:
         try:
             # if there is a 2048 tile in the grid, the player wins
             for row in self.grid:
-                if 16 in row:
+                if 2048 in row:
                     self.state = 'win'
                     return
             
@@ -192,7 +192,7 @@ class Game2048:
     def play(self):
         '''play the game'''
         try:
-            # start the
+            # start the game
             self.initialize_grid()
             while self.state == 'not over':
                 direction = input("Enter your move: ")
